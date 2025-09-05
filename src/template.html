@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Modern Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-section">
+                <div class="user-title">LISTIFY</div>
+            </div>
+            
+            <button class="add-task-btn pulse" >
+                + Add Task
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <div class="listify-header">
+                <h1 class="listify-title">Listify</h1>
+            </div>
+
+            <div id="tasks-container">
+                <div class="task-card">
+                    <div class="task-header">
+                        <div>
+                            <div class="task-title">Task 1</div>
+                            <div class="task-meta">
+                                <span class="priority-badge">Priority</span>
+                                <span class="due-badge">Due Today</span>
+                            </div>
+                        </div>
+                        <button class="delete-btn">×</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <dialog>
+            <div class="add-task-dialog">
+            <form method="dialog" class="add-task-form">
+                <div class="legend-dialog">
+                    <div class="legend-main">
+                <legend>ADD TASK
+
+                    
+                </legend>
+                </div>
+                <div class="legend-close">
+                    <button class="close-btn">×</button>
+                </div>
+                
+                </div>
+                
+                <div class="task-heading">
+                <label for="task-head">Task: </label>
+                <input type="text" id="task-head" required>
+                </div>
+                
+                <div class="priority">
+                <label for="task-priority">Priority: </label>
+                <input type="text" id="task-priority" required> 
+                </div>
+                
+                <div class="date">
+                <label for="due-date">Due Date: </label>
+                <input type="text" id="due-date" required>
+                </div>
+
+                <button type="submit" class="submit">+ Add Task</button>
+                </div>
+            </form>
+            </div>
+        </dialog>
+    </div>
+
+    </body>
+</html>
