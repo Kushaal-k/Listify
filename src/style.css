@@ -50,10 +50,10 @@ body {
     transition: all 0.3s ease;
 }
 
-.user-section:hover {
+/* .user-section:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .user-title {
     font-size: 24px;
@@ -113,6 +113,14 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #2c3e50;
+}
+
+.no-tasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-top: 64px;
 }
 
 .task-card {

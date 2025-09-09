@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskFlow - Modern Task Manager</title>
+    <title>Listify</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,19 +22,10 @@
             <div class="listify-header">
                 <h1 class="listify-title">Listify</h1>
             </div>
-
+            <hr>
             <div id="tasks-container">
-                <div class="task-card">
-                    <div class="task-header">
-                        <div>
-                            <div class="task-title">Task 1</div>
-                            <div class="task-meta">
-                                <span class="priority-badge">Priority</span>
-                                <span class="due-badge">Due Today</span>
-                            </div>
-                        </div>
-                        <button class="delete-btn">×</button>
-                    </div>
+                <div class="no-tasks">
+                    NO TASKS
                 </div>
             </div>
         </main>
@@ -67,7 +58,7 @@
                 
                 <div class="date">
                 <label for="due-date">Due Date: </label>
-                <input type="text" id="due-date" required>
+                <input type="date" id="due-date" required>
                 </div>
 
                 <button type="submit" class="submit">+ Add Task</button>

@@ -1,5 +1,5 @@
 import "./style.css"
-import { addTask } from "./script.js"
+import { renderTasks } from "./script.js"
 
 const dialog = document.querySelector("dialog");
 const addbtn = document.querySelector(".add-task-btn");
@@ -13,4 +13,4 @@ closebtn.addEventListener("click", () => {
     dialog.close();
 });
 
-addTask();
+renderTasks();
